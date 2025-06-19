@@ -52,7 +52,7 @@ const generarPDFCotizacion = async (cotizacion, cliente, detalles) => {
           headerRows: 1,
           widths: ['auto', 'auto', '*', 'auto', 'auto'],
           body: [
-            ['Tipo', 'Cantidad', 'Descripción del Producto', 'Precio Unitario (Q)', 'Total (Q)'],
+            ['Tipo', 'Cantidad', 'Descripción', 'Precio Unitario (Q)', 'Total (Q)'],
             ...detalles.map(d => [
               d.tipo || 'bien',
               d.cantidad,
