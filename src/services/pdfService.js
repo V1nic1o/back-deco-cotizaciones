@@ -43,7 +43,7 @@ const generarPDFCotizacion = async (cotizacion, cliente, detalles) => {
       { text: formatearFecha(), style: 'fecha' },
       {
         text:
-          'Decogreen\nCorreo: decogreen502@gmail.com\nTeléfono: 3862 5252\nDirección: Ciudad de Guatemala\nNIT: 60009802\n\n',
+          'Empresa: Decogreen\nCorreo: decogreen502@gmail.com\nTeléfono: 3862 5252\nDirección: Ciudad de Guatemala\nNIT: 60009802\n\n',
         style: 'subheader'
       },
       { text: `Cliente: ${cliente.nombre}\nNIT: ${cliente.nit}\n\n`, style: 'subheader' },
@@ -75,7 +75,7 @@ const generarPDFCotizacion = async (cotizacion, cliente, detalles) => {
     }
 
     contenidoPDF.push({
-      text: '\n______________________________\nFirma del Encargado del Vivero',
+      text: '\n______________________________\nFirma del Encargado de Empresa Decogreen',
       style: 'footer'
     });
 
